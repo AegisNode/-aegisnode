@@ -1,78 +1,52 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AegisNode</title>
-  <style>
-    body { font-family: Arial, sans-serif; background: #0a0a0a; color: #e0e0e0; margin: 0; padding: 0; }
-    header { background: #111; padding: 20px; text-align: center; }
-    h1 { margin: 0; font-size: 2em; }
-    nav { text-align: center; margin: 20px 0; }
-    nav button { margin: 0 10px; padding: 10px 20px; background: #222; color: #fff; border: none; cursor: pointer; }
-    section { padding: 20px; max-width: 800px; margin: auto; }
-    .module { background: #1a1a1a; padding: 15px; margin: 15px 0; border-left: 4px solid #444; }
-    footer { text-align: center; padding: 20px; font-size: 0.9em; color: #888; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Obsidian Systems | Strategic Research Node</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>AegisNode</h1>
-    <p id="tagline">Autonomous architectures for saturation, evasion, and modular regeneration.</p>
+    <h1>Obsidian Systems</h1>
+    <p><em>Strategic Research Node for Hostile Environments</em></p>
+    <p><em>Nodo de Investigación Estratégica para Entornos Hostiles</em></p>
   </header>
 
-  <nav>
-    <button onclick="setLang('en')">English</button>
-    <button onclick="setLang('es')">Español</button>
-  </nav>
+  <section id="mission">
+    <h2>Mission Statement / Declaración de Misión</h2>
+    <p>
+      We simulate, validate, and deploy modular architectures for multi-domain operations.  
+      Nuestra misión es simular, validar y desplegar arquitecturas modulares para operaciones multidominio.
+    </p>
+  </section>
 
-  <section id="content">
-    <div class="module">
-      <h2>SS V4.2 — Saturation Suite</h2>
-      <p>Multi-vector deployment protocol for high-friction zones. Includes adaptive camouflage and denial layers.</p>
-    </div>
-    <div class="module">
-      <h2>Hydra NS — Node Swarm</h2>
-      <p>Autonomous regeneration and evasion cluster. Designed for modular absorption and tactical rerouting.</p>
-    </div>
-    <div class="module">
-      <h2>Contact Node</h2>
-      <p>Encrypted channel available upon request. Brokers and governments only. <br><em>[activation requires handshake]</em></p>
-    </div>
+  <section id="capabilities">
+    <h2>Capabilities / Capacidades</h2>
+    <ul>
+      <li>⚙️ Tactical Systems Simulation / Simulación de Sistemas Tácticos</li>
+      <li>🧬 Modular Deployment / Despliegue Modular</li>
+      <li>🛰️ Operational Deniability / Negación Operativa</li>
+      <li>📡 Strategic Absorption / Absorción Estratégica</li>
+    </ul>
+  </section>
+
+  <section id="publications">
+    <h2>Research Briefs / Informes Estratégicos</h2>
+    <p>Coming soon: simulated whitepapers, encrypted field reports, and buyer-specific modules.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Secure Contact / Contacto Seguro</h2>
+    <p>Encrypted protocols available upon request.  
+       Protocolos cifrados disponibles bajo solicitud.
+    </p>
+    <p>Email: <code>node@obsidian-systems.io</code></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 AegisNode. Tactical architectures for autonomous deployment.</p>
+    <p>© Obsidian Systems — Strategic Research Node</p>
   </footer>
-
-  <script>
-    const content = {
-      en: {
-        tagline: "Autonomous architectures for saturation, evasion, and modular regeneration.",
-        modules: [
-          ["SS V4.2 — Saturation Suite", "Multi-vector deployment protocol for high-friction zones. Includes adaptive camouflage and denial layers."],
-          ["Hydra NS — Node Swarm", "Autonomous regeneration and evasion cluster. Designed for modular absorption and tactical rerouting."],
-          ["Contact Node", "Encrypted channel available upon request. Brokers and governments only. [activation requires handshake]"]
-        ]
-      },
-      es: {
-        tagline: "Arquitecturas autónomas para saturación, evasión y regeneración modular.",
-        modules: [
-          ["SS V4.2 — Suite de Saturación", "Protocolo de despliegue multivectorial para zonas de alta fricción. Incluye camuflaje adaptativo y capas de negación."],
-          ["Hydra NS — Enjambre de Nodos", "Cluster autónomo de regeneración y evasión. Diseñado para absorción modular y redirección táctica."],
-          ["Nodo de Contacto", "Canal cifrado disponible bajo solicitud. Solo brokers y gobiernos. [activación requiere handshake]"]
-        ]
-      }
-    };
-
-    function setLang(lang) {
-      document.getElementById("tagline").textContent = content[lang].tagline;
-      const modules = document.querySelectorAll(".module");
-      content[lang].modules.forEach((mod, i) => {
-        modules[i].querySelector("h2").textContent = mod[0];
-        modules[i].querySelector("p").textContent = mod[1];
-      });
-    }
-  </script>
 </body>
 </html>
